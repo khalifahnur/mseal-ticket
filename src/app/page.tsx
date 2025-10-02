@@ -1,22 +1,8 @@
-import { EventCategories } from "@/components/EventCategories";
-import { FeaturedEvents } from "@/components/FeaturedEvents";
-import { Footer } from "@/components/Footer";
-import { Header } from "@/components/Header";
-import { HeroSection } from "@/components/Hero";
-import { TrustSignals } from "@/components/TrustSignal";
+import LandingPage from '@/components/LandingPage'
+import React from 'react'
 
-
-export default function HomePage() {
+export default function page() {
   return (
-    <div className="min-h-screen bg-background">
-      <Header />
-      <main>
-        <HeroSection />
-        <FeaturedEvents />
-        {/* <EventCategories /> */}
-        {/* <TrustSignals /> */}
-      </main>
-      <Footer />
-    </div>
+    <LandingPage />
   )
 }

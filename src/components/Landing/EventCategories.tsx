@@ -54,7 +54,7 @@ export function EventCategories() {
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4">Browse by Category</h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Find exactly what you're looking for with our organized event categories
+            Find exactly what you&apos;re looking for with our organized event categories
           </p>
         </div>
 

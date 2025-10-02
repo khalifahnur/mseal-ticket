@@ -4,6 +4,7 @@ import { useState } from "react"
 import { Search, MapPin, Calendar } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
+import TypewriterText from "./TypeWriterTxt"
 
 export function HeroSection() {
   const [searchQuery, setSearchQuery] = useState("")
@@ -15,27 +16,21 @@ export function HeroSection() {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url('/stadi.jpg')",
+          backgroundImage: "url('/ssp.jpg')",
         }}
       />
 
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/60" />
+      <div className="absolute inset-0 bg-black/30" />
 
-      {/* Bottom Blur Effect */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 backdrop-blur-md bg-gradient-to-t from-background/80 to-transparent" />
+
+      <div className="absolute bottom-0 left-0 right-0 h-32 backdrop-blur-md bg-gradient-to-t from-background/10 to-transparent" />
+
 
       {/* Content */}
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl lg:text-6xl font-bold mb-6 text-white">
-            Find Your Next
-            <span className="text-white block">Unforgettable Experience</span>
-          </h1>
-          <p className="text-xl text-white mb-12 text-pretty max-w-2xl mx-auto">
-            Discover and book tickets for the hottest concerts, sports events, theater shows, and more. 100% authentic
-            tickets with our guarantee.
-          </p>
+          <TypewriterText />
 
           {/* Search Form */}
           <div className="bg-card border border-border rounded-lg p-6 max-w-3xl mx-auto">
