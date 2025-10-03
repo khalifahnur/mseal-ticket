@@ -127,7 +127,7 @@ export function PaymentForm({ values, setFieldValue, amount, isGuest = false }: 
                     name="phoneNumber"
                     as={Input}
                     className="pl-10"
-                    placeholder="254XXXXXXXXX"
+                    placeholder="+254XXXXXXXXX"
                   />
                 </div>
                 <div className="text-sm text-muted-foreground mt-1">
